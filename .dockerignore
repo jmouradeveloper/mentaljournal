@@ -1,0 +1,47 @@
+.git
+.gitignore
+README.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Logs
+log/*
+tmp/*
+
+# Runtime data
+*.pid
+*.seed
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Dependency directories
+node_modules
+bower_components
+
+# Optional REPL history
+.node_repl_history
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
