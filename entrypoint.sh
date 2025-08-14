@@ -12,11 +12,12 @@ if [ ! -f "Gemfile" ]; then
         echo "Configuração do banco de dados atualizada para SQLite em todos os ambientes"
     fi
     
-    # Instala as gems
-    bundle install
-    
     echo "Projeto Rails criado com sucesso!"
 fi
+
+# Sempre garantir que as gems estejam instaladas
+echo "Verificando e instalando gems..."
+bundle check || bundle install
 
 # Verifica se o banco de dados existe
 if [ ! -f "db/development.sqlite3" ]; then

@@ -1,47 +1,37 @@
-.git
-.gitignore
-README.md
-Dockerfile
-docker-compose.yml
-.dockerignore
+# See https://docs.docker.com/engine/reference/builder/#dockerignore-file for more about ignoring files.
 
-# Logs
-log/*
-tmp/*
+# Ignore git directory.
+/.git/
 
-# Runtime data
-*.pid
-*.seed
+# Ignore bundler config.
+/.bundle
 
-# Coverage directory used by tools like istanbul
-coverage
+# Ignore all environment files (except templates).
+/.env*
+!/.env*.erb
 
-# Dependency directories
-node_modules
-bower_components
+# Ignore all default key files.
+/config/master.key
+/config/credentials/*.key
 
-# Optional REPL history
-.node_repl_history
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/.keep
 
-# IDE files
-.vscode
-.idea
-*.swp
-*.swo
-*~
+# Ignore storage (uploaded files in development and any SQLite databases).
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/.keep
 
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Ignore assets.
+/node_modules/
+/app/assets/builds/*
+!/app/assets/builds/.keep
+/public/assets
