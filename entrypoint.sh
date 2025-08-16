@@ -16,12 +16,13 @@ if [ ! -f "Gemfile" ]; then
     fi
     
     echo "Projeto Rails 8 criado com sucesso!"
-    echo "Instalando gems com logs visíveis..."
+    echo "Configurando plataforma e instalando gems..."
+    bundle lock --add-platform x86_64-linux
     bundle install --verbose
 else
     # Sempre garantir que as gems estejam instaladas
     echo "Verificando e instalando gems..."
-    bundle check || bundle install --verbose
+    bundle check || (bundle lock --add-platform x86_64-linux && bundle install --verbose)
 fi
 
 # Verifica se o banco de dados existe
