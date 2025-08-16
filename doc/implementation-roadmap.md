@@ -123,7 +123,7 @@
 
 ### Backend
 - **Ruby 3.3.0** - Linguagem principal
-- **Rails 7.1.x** - Framework web
+- **Rails 8.0.x** - Framework web
 - **SQLite** - Banco de dados
 - **BCrypt** - Hash de senhas
 - **JWT** (opcional) - Para API futura
@@ -139,7 +139,7 @@
 ### Gems Essenciais
 ```ruby
 # Gemfile
-gem 'rails', '~> 7.1.0'
+gem 'rails', '~> 8.0.0'
 gem 'sqlite3', '~> 1.4'
 gem 'puma', '~> 6.0'
 gem 'bcrypt', '~> 3.1.7'

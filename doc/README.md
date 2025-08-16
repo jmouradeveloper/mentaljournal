@@ -48,7 +48,7 @@ Este diretório contém toda a documentação técnica e de planejamento do proj
 - **Sessions** - Controle de sessões (auth própria)
 
 ### Stack Tecnológico
-- **Ruby 3.3.0** + **Rails 7.1.x**
+- **Ruby 3.3.0** + **Rails 8.0.x**
 - **SQLite** (desenvolvimento e produção)
 - **BCrypt** (autenticação própria, sem Devise)
 - **Stimulus + Turbo** (JavaScript moderno)
